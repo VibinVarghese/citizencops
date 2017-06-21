@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "51912463929",
+    "firebase_url": "https://fyndoagregator.firebaseio.com",
+    "project_id": "fyndoagregator",
+    "storage_bucket": "fyndoagregator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51912463929:android:91d3b2a8853bb83c",
+        "android_client_info": {
+          "package_name": "fyndo.geospot.fyndoagregator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51912463929-7g2r8h8tv3l5pf7i8lne0m84cprdlrgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fyndo.geospot.fyndoagregator",
+            "certificate_hash": "59B24D25D3B45E35C509F9BB512298B9D305E002"
+          }
+        },
+        {
+          "client_id": "51912463929-pl0vh9bqbjdl59cse3vgbuit1uh9oba9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVGQ84yacSVii4VYVvxf_gZNvGPuZnCSM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51912463929-pl0vh9bqbjdl59cse3vgbuit1uh9oba9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

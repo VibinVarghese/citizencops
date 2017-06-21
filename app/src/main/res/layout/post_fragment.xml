@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:windowSoftInputMode="adjustPan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:isScrollContainer="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/image_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="36dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <FrameLayout
+                    android:id="@+id/click_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="?selectableItemBackground"
+                        android:padding="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_place_holder" />
+
+                    <ImageView
+                        android:id="@+id/reset_image1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end|top"
+                        android:src="@drawable/cross"
+                        android:tint="@android:color/holo_red_dark"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/edit_image1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="start|bottom"
+                        android:src="@drawable/pencil" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/click_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="?selectableItemBackground"
+                        android:padding="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_place_holder" />
+
+                    <ImageView
+                        android:id="@+id/reset_image2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end|top"
+                        android:src="@drawable/cross"
+                        android:tint="@android:color/holo_red_dark"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/edit_image2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="start|bottom"
+                        android:src="@drawable/pencil" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/click_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="?selectableItemBackground"
+                        android:padding="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_place_holder" />
+
+                    <ImageView
+                        android:id="@+id/reset_image3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end|top"
+                        android:src="@drawable/cross"
+                        android:tint="@android:color/holo_red_dark"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/edit_image3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="start|bottom"
+                        android:src="@drawable/pencil" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/offer_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <RadioButton
+                    android:id="@+id/deals_n_documents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Deals &amp; Discounts"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/new_launches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:text="Regular"
+                    android:textSize="12sp" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:visibility="gone"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/shop_area_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:singleLine="true"
+                    android:text="Select Category : "
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/shop_area_description"
+                    android:dropDownWidth="wrap_content"
+                    android:isScrollContainer="true"
+                    android:textDirection="rtl" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/pick_location_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+               <!-- <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="8dp"
+                    android:src="@drawable/location"
+                    android:tint="@android:color/darker_gray" />-->
+
+                <TextView
+                    android:id="@+id/place_description"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Pick a location"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:visibility="gone"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/select_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:singleLine="true"
+                    android:text="Pick a store : "
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/refresh"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="4dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="?selectableItemBackground"
+                    android:src="@drawable/quantum_ic_refresh_white_24"
+                    android:tint="@color/colorPrimary" />
+
+                <Spinner
+                    android:id="@+id/shop_dropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/refresh"
+                    android:layout_toRightOf="@id/select_shop"
+                    android:dropDownWidth="wrap_content"
+                    android:isScrollContainer="true"
+                    android:textDirection="rtl" />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/post_title_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="40dp"
+                android:hint="Post Title"
+                android:theme="@style/TextLabelBlack"
+                app:counterEnabled="true"
+                app:counterMaxLength="35">
+
+                <EditText
+                    android:id="@+id/post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layerType="software"
+                    android:maxLength="35"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:translationY="-8dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/content_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Description"
+                android:theme="@style/TextLabelBlack"
+                app:counterEnabled="true"
+                app:counterMaxLength="140">
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:imeOptions="flagNoFullscreen"
+                    android:layerType="software"
+                    android:maxLength="140"
+                    android:singleLine="false"
+                    android:textColor="@android:color/black"
+                    android:translationY="-8dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="44dp"
+                android:layout_marginTop="44dp">
+
+                <Button
+                    android:id="@+id/button_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_inverted_bg"
+                    android:padding="10dp"
+                    android:text="POST"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorPrimaryDark">#03a9f4</color>
+    <color name="colorAccent">#03a9f4</color>
+    <color name="selectedPrefsColor">#03a9f4</color>
+    <color name="divider">#757575</color>
+    <color name="bottomTabGrey">#e0e0e0</color>
+    <color name="cancelTextColor">#bdbdbd</color>
+    <color name="lightGrey">#eeeeee</color>
+</resources>
